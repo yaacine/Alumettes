@@ -72,4 +72,28 @@ public class Ihm {
         return nom;
     }
 
+    // cette methode annonce le debut de la partie
+    public void start(){
+        System.out.println("Super! la partie va commance maintenant !!! ");
+
+    }
+
+    // cette methode affiche la fin d'une partie et annonce le vainqueur
+    public void finPartie(int idGagnant , String nomGagnant){
+        System.out.println("Partie terminee , le vainqueur est le joueur: "+idGagnant+" => "+nomGagnant);
+    }
+
+    // cette methode demande si on veut continuer ou quitter le jeu
+    public boolean choixContinuer(){
+        String result="";
+        System.out.print("Voulez vous continuer ? ecrivez oui/non : ");
+        Scanner scan = new Scanner(System.in);
+        String s = scan.next();
+        result = scan.nextLine();
+        return result=="oui";
+
+    }
+
+
+
 }
