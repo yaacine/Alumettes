@@ -1,5 +1,6 @@
 package controller;
 
+import modele.Coup;
 import modele.Tas;
 import vue.Ihm;
 
@@ -19,6 +20,13 @@ public class ControleurJeu {
 
 
     public void commencerJeu(){
+        this.ihm.start();
+        this.ihm.displayTas(this.tas);
+        Coup coup = this.ihm.recupererCoup(0);
+        boolean coupValide = this.tas.verifierCoup(coup.num_tas, coup.nb_alumettes_retirer);
+        if (coupValide){
+
+        }
 
     }
 }

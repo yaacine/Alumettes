@@ -1,5 +1,7 @@
 package vue;
 
+import modele.Coup;
+import modele.Joueur;
 import modele.Tas;
 
 import java.util.Scanner;
@@ -78,9 +80,28 @@ public class Ihm {
 
     }
 
-    // cette methode affiche la fin d'une partie et annonce le vainqueur
+    // cette methode affiche la fin d'une partie et annonce le vainqueur de la partie
     public void finPartie(int idGagnant , String nomGagnant){
         System.out.println("Partie terminee , le vainqueur est le joueur: "+idGagnant+" => "+nomGagnant);
+    }
+
+    // cette methode affiche la fin du jeu et annonce le vainqueur
+    public void finJeu(Joueur joueur1 , Joueur joueur2){
+        System.out.println("*************************************************");
+        System.out.println("***************Le Jeu est terminé****************");
+        System.out.println("joueur1:  "+joueur1.name+"****||**** joueur2: "+joueur2.name);
+        System.out.println("victoites: "+joueur1.nb_victoires+"****||**** victoires:  "+joueur2.nb_victoires);
+        System.out.println("***************Le Jeu est terminé****************");
+        if(joueur1.nb_victoires > joueur2.nb_victoires){
+            System.out.println("Le vainqueur est le joueur:  "+ joueur1.name );
+
+        }else if(joueur1.nb_victoires < joueur2.nb_victoires){
+            System.out.println("Le vainqueur est le joueur:  "+ joueur2.name );
+
+        }else{
+
+        }
+
     }
 
     // cette methode demande si on veut continuer ou quitter le jeu
@@ -92,6 +113,29 @@ public class Ihm {
         result = scan.nextLine();
         return result=="oui";
 
+    }
+
+    // cette methode recupere le coup du joueur
+    public Coup recupererCoup(int numJoueur){
+        Coup coup;
+        String result;
+        System.out.print("C'est le tour du joueur "+numJoueur+"pour jouer.");
+        System.out.print("Ecriver votre coup sous forme: tas,nombre_d'alumettes ");
+        Scanner scan = new Scanner(System.in);
+        String s = scan.next();
+        result = scan.nextLine();
+
+        int numTas=0;
+        int nbAllume=0;
+        try{
+             numTas  = Integer.parseInt((result.split(","))[0]);
+             nbAllume  = Integer.parseInt((result.split(","))[0]);
+        }catch (Exception e){
+            System.out.print("Erreur dans le format du coup. Veuillez ecriver votre coup sous forme: tas,nombre_d'alumettes : ");
+        }
+
+        coup = new Coup(numTas, nbAllume);
+        return  coup;
     }
 
 
