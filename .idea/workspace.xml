@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="46ca5c50-d994-43cb-b9f7-13433604c357" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vue/Ihm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vue/Ihm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/ConstructeurJeu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ConstructeurJeu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/ControleurJeu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ControleurJeu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modele/Joueur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modele/Joueur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modele/Tas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modele/Tas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nim/JeuNim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nim/JeuNim.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +62,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607709531007</updated>
-      <workItem from="1607709534873" duration="4629000" />
+      <workItem from="1607709534873" duration="5035000" />
+      <workItem from="1607780153134" duration="349000" />
+      <workItem from="1607796824681" duration="3251000" />
     </task>
     <servers />
   </component>
@@ -67,13 +73,13 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="240" y="65" key="#Project_Structure/0.0.1280.800@0.0.1280.800" timestamp="1607709815086" />
-    <state x="453" y="123" key="#com.intellij.ide.util.MemberChooser" timestamp="1607710119142">
+    <state x="453" y="123" key="#com.intellij.ide.util.MemberChooser" timestamp="1607807604241">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="453" y="123" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1607710119142" />
-    <state x="317" y="232" key="com.intellij.ide.util.TipDialog" timestamp="1607709536851">
+    <state x="453" y="123" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1607807604241" />
+    <state x="317" y="232" key="com.intellij.ide.util.TipDialog" timestamp="1607796823474">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="317" y="232" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1607709536851" />
+    <state x="317" y="232" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1607796823474" />
   </component>
 </project>

@@ -11,8 +11,8 @@ public class JeuNim {
         Ihm ihm = new Ihm();
         ConstructeurJeu constructeurJeu= new ConstructeurJeu(ihm);
         constructeurJeu.construireJeu();
-        Tas lesTas=constructeurJeu.getLesTas();
-        ControleurJeu controleurJeu=new ControleurJeu(ihm, lesTas);
+        Tas lesTas=constructeurJeu.getTas();
+        ControleurJeu controleurJeu=new ControleurJeu(ihm, lesTas, constructeurJeu);
         controleurJeu.commencerJeu();
     }
 }
