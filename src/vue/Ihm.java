@@ -20,7 +20,9 @@ public class Ihm {
         int i=0;
         while (i<nbAlumettes){
             System.out.print("| ");
+            i++;
         }
+        System.out.println();
     }
 
     // cette methode demande à l'utilisateur de saisir le nombre de tas
@@ -31,7 +33,6 @@ public class Ihm {
         while(!correct){
             System.out.print("Introduisez le nombre de tas :");
             Scanner scan = new Scanner(System.in);
-            String s = scan.next();
             nbTas = scan.nextInt();
             if (nbTas<1){
                 System.out.println("Le nombre de Tas doit etre superieure ou egale à 1 ! ");
@@ -48,28 +49,28 @@ public class Ihm {
     public int getMaxAlumettesNb(){
         int maxCoup=0;
         boolean correct =false;
+
         while (!correct){
             System.out.print("limiter le nombre d'allumettes a retirer a chaque coup? introduisez la limire sinon 0:");
             Scanner scan = new Scanner(System.in);
-            String s = scan.next();
             maxCoup = scan.nextInt();
             if (maxCoup<0){
                 System.out.println("Le nombre de Tas doit etre superieure ou egale à 0 ! ");
             }
             else {
                 correct=true;
+                return maxCoup;
             }
         }
-
         return maxCoup;
+
     }
 
     // cette methode demande de saisir le nom du joueur
-    public String nomJoueur(){
+    public String nomJoueur(int numJoueur){
         String nom ="";
-        System.out.print("limiter le nombre d'allumettes a retirer a chaque coup? introduisez la limire sinon 0:");
+        System.out.print("Introduisez le nom du joueur " +numJoueur);
         Scanner scan = new Scanner(System.in);
-        String s = scan.next();
         nom = scan.nextLine();
         return nom;
     }
@@ -109,7 +110,6 @@ public class Ihm {
         String result="";
         System.out.print("Voulez vous continuer ? ecrivez oui/non : ");
         Scanner scan = new Scanner(System.in);
-        String s = scan.next();
         result = scan.nextLine();
         return result=="oui";
 
@@ -122,14 +122,16 @@ public class Ihm {
         System.out.print("C'est le tour du joueur "+numJoueur+"pour jouer.");
         System.out.print("Ecriver votre coup sous forme: tas,nombre_d'alumettes ");
         Scanner scan = new Scanner(System.in);
-        String s = scan.next();
         result = scan.nextLine();
 
         int numTas=0;
         int nbAllume=0;
+        String tab[];
+        tab = result.split(",");
+
         try{
-             numTas  = Integer.parseInt((result.split(","))[0]);
-             nbAllume  = Integer.parseInt((result.split(","))[0]);
+             numTas  = Integer.parseInt(tab[0]);
+             nbAllume  = Integer.parseInt(tab[1]);
         }catch (Exception e){
             System.out.print("Erreur dans le format du coup. Veuillez ecriver votre coup sous forme: tas,nombre_d'alumettes : ");
         }

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46ca5c50-d994-43cb-b9f7-13433604c357" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/ConstructeurJeu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ConstructeurJeu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/ControleurJeu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ControleurJeu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modele/Tas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modele/Tas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/vue/Ihm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vue/Ihm.java" afterDir="false" />
@@ -34,9 +35,29 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration name="JeuNim" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="nim.JeuNim" />
+      <module name="Alumettes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nim.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.JeuNim" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -62,7 +83,8 @@
       <updated>1607709531007</updated>
       <workItem from="1607709534873" duration="5035000" />
       <workItem from="1607780153134" duration="349000" />
-      <workItem from="1607796824681" duration="7766000" />
+      <workItem from="1607796824681" duration="8878000" />
+      <workItem from="1607893388430" duration="4170000" />
     </task>
     <servers />
   </component>
@@ -71,13 +93,79 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="240" y="65" key="#Project_Structure/0.0.1280.800@0.0.1280.800" timestamp="1607709815086" />
+    <state x="104" y="62" width="1071" height="734" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607894027721">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="104" y="62" width="1071" height="734" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800@0.0.1280.800" timestamp="1607894027721" />
     <state x="453" y="123" key="#com.intellij.ide.util.MemberChooser" timestamp="1607807604241">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="453" y="123" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1607807604241" />
-    <state x="317" y="232" key="com.intellij.ide.util.TipDialog" timestamp="1607796823474">
+    <state width="1238" height="263" key="GridCell.Tab.0.bottom" timestamp="1607897734486">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="317" y="232" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1607796823474" />
+    <state width="1238" height="263" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1607897734486" />
+    <state width="1238" height="263" key="GridCell.Tab.0.center" timestamp="1607897734485">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="263" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1607897734485" />
+    <state width="1238" height="263" key="GridCell.Tab.0.left" timestamp="1607897734484">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="263" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1607897734484" />
+    <state width="1238" height="263" key="GridCell.Tab.0.right" timestamp="1607897734486">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="263" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1607897734486" />
+    <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1607897734489">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="263" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1607897734489" />
+    <state width="1238" height="263" key="GridCell.Tab.1.center" timestamp="1607897734488">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="263" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1607897734488" />
+    <state width="1238" height="263" key="GridCell.Tab.1.left" timestamp="1607897734487">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="263" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1607897734487" />
+    <state width="1238" height="263" key="GridCell.Tab.1.right" timestamp="1607897734488">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="263" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1607897734488" />
+    <state x="128" y="0" key="SettingsEditor" timestamp="1607894075235">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="128" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1607894075235" />
+    <state x="317" y="232" key="com.intellij.ide.util.TipDialog" timestamp="1607893389612">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="317" y="232" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1607893389612" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/modele/Tas.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/vue/Ihm.java</url>
+          <line>132</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/vue/Ihm.java</url>
+          <line>133</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/vue/Ihm.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

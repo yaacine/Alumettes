@@ -25,8 +25,8 @@ public class ConstructeurJeu {
         this.tas = new Tas(this.nbTas);
         this.nbMaxCoups= this.ihm.getMaxAlumettesNb();
 
-        this.nomjoueur1 = this.ihm.nomJoueur();
-        this.nomjoueur2 = this.ihm.nomJoueur();
+        this.nomjoueur1 = this.ihm.nomJoueur(0);
+        this.nomjoueur2 = this.ihm.nomJoueur(1);
 
         this.joueur1= new Joueur(1, this.nomjoueur1, 0 );
         this.joueur2= new Joueur(2, this.nomjoueur2, 0 );

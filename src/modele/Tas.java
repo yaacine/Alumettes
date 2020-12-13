@@ -9,23 +9,24 @@ public class Tas {
 
     public Tas(int nb_tas) {
         this.nb_tas = nb_tas;
-        ArrayList<Integer> tableau = new ArrayList<>();
-        for (int i = 1; i <= nb_tas; i++) {
+        ArrayList<Integer> tableau = new ArrayList<>(nb_tas);
+        for (int i = 0; i < nb_tas; i++) {
             tableau.add(i, 2*i+1);
         }
         this.alumettesParTas = tableau;
     }
 
     // cette methode verifie si le coup est valide
-    public boolean verifierCoup(int tas , int nbAlumettes){
-        if(this.alumettesParTas.get(tas-1)< nbAlumettes) return  false;
+    public boolean verifierCoup(Coup coup){
+
+        if(this.alumettesParTas.get(coup.num_tas-1)< coup.nb_alumettes_retirer) return  false;
         else return true;
     }
 
     // cette methode joue le coup
-    public boolean jouerCoup(int tas, int nbAlumetts){
-        if(this.alumettesParTas.get(tas-1)>= nbAlumetts){
-            this.alumettesParTas.set(tas-1,this.alumettesParTas.get(tas-1)- nbAlumetts);
+    public boolean jouerCoup(Coup coup){
+        if(this.alumettesParTas.get(coup.num_tas-1)>= coup.nb_alumettes_retirer){
+            this.alumettesParTas.set(coup.num_tas-1,this.alumettesParTas.get(coup.num_tas-1)- coup.nb_alumettes_retirer);
             return  true;
         }
         else return true;

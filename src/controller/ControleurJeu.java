@@ -20,13 +20,19 @@ public class ControleurJeu {
 
 
     public void commencerJeu(){
+        boolean continuer = true;
+        int joueurCourant=0;
         this.ihm.start();
-        this.ihm.displayTas(this.tas);
-        Coup coup = this.ihm.recupererCoup(0);
-        boolean coupValide = this.tas.verifierCoup(coup.num_tas, coup.nb_alumettes_retirer);
-        if (coupValide){
+        while (continuer){
+            this.ihm.displayTas(this.tas);
+            Coup coup = this.ihm.recupererCoup(joueurCourant);
+            boolean coupValide = this.tas.verifierCoup(coup);
+            if (coupValide){
 
+            }
         }
+
+
 
     }
 }
