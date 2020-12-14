@@ -6,30 +6,30 @@ import vue.Ihm;
 
 public class ConstructeurJeu {
 
-    public Tas tas;
-    public Ihm ihm;
-    public Joueur joueur1;
-    public Joueur joueur2;
-    public int nbMaxCoups;
-    public String nomjoueur1;
-    public String nomjoueur2;
-    public int nbTas;
+    private Tas tas;
+    private Ihm ihm;
+    private Joueur joueur1;
+    private Joueur joueur2;
+    private int nbMaxCoups;
+    private String nomjoueur1;
+    private String nomjoueur2;
+    private int nbTas;
 
     public ConstructeurJeu(Ihm ihm) {
-        this.ihm = ihm;
+        this.setIhm(ihm);
     }
 
     public void construireJeu(){
 
-        this.nbTas= this.ihm.getNbTas();
-        this.tas = new Tas(this.nbTas);
-        this.nbMaxCoups= this.ihm.getMaxAlumettesNb();
+        this.setNbTas(this.getIhm().getNbTas());
+        this.setTas(new Tas(this.getNbTas()));
+        this.setNbMaxCoups(this.getIhm().getMaxAlumettesNb());
 
-        this.nomjoueur1 = this.ihm.nomJoueur(0);
-        this.nomjoueur2 = this.ihm.nomJoueur(1);
+        this.setNomjoueur1(this.getIhm().nomJoueur(0));
+        this.setNomjoueur2(this.getIhm().nomJoueur(1));
 
-        this.joueur1= new Joueur(1, this.nomjoueur1, 0 );
-        this.joueur2= new Joueur(2, this.nomjoueur2, 0 );
+        this.setJoueur1(new Joueur(1, this.getNomjoueur1(), 0 ));
+        this.setJoueur2(new Joueur(2, this.getNomjoueur2(), 0 ));
 
     }
     public Tas getTas() {
