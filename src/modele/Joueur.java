@@ -13,4 +13,27 @@ public class Joueur {
         this.nb_victoires = nb_victoires;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getNb_victoires() {
+        return nb_victoires;
+    }
+
+    public void setNb_victoires(int nb_victoires) {
+        this.nb_victoires = nb_victoires;
+    }
 }

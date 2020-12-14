@@ -133,13 +133,16 @@ public class Ihm {
              numTas  = Integer.parseInt(tab[0]);
              nbAllume  = Integer.parseInt(tab[1]);
         }catch (Exception e){
-            System.out.print("Erreur dans le format du coup. Veuillez ecriver votre coup sous forme: tas,nombre_d'alumettes : ");
+            System.out.println("Erreur dans le format du coup. Veuillez ecriver votre coup sous forme: tas,nombre_d'alumettes : ");
         }
 
         coup = new Coup(numTas, nbAllume);
         return  coup;
     }
 
-
+    // cette methode affiche que le coup n'est pas valide
+    public void coupInvalide(){
+        System.out.println("Erreur : Le coup n'est pas valide, veulliez réessayer:  ");
+    }
 
 }
