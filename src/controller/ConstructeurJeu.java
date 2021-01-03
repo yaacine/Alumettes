@@ -14,6 +14,9 @@ public class ConstructeurJeu {
     private String nomjoueur1;
     private String nomjoueur2;
     private int nbTas;
+    public boolean contreIA=true;
+
+
 
     public ConstructeurJeu(Ihm ihm) {
         this.setIhm(ihm);
@@ -23,15 +26,19 @@ public class ConstructeurJeu {
 
         this.setNbTas(this.getIhm().getNbTas());
         this.setTas(new Tas(this.getNbTas()));
+
         this.setNbMaxCoups(this.getIhm().getMaxAlumettesNb());
+        this.contreIA = this.getIhm().jouerContreIA();
 
         this.setNomjoueur1(this.getIhm().nomJoueur(0));
-        this.setNomjoueur2(this.getIhm().nomJoueur(1));
+        if (!this.contreIA) this.setNomjoueur2(this.getIhm().nomJoueur(1));
+        else this.setNomjoueur2("Ordinateur");
 
         this.setJoueur1(new Joueur(1, this.getNomjoueur1(), 0 ));
         this.setJoueur2(new Joueur(2, this.getNomjoueur2(), 0 ));
 
     }
+
     public Tas getTas() {
         return tas;
     }

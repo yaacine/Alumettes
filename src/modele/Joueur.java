@@ -13,6 +13,8 @@ public class Joueur {
         this.setNb_victoires(nb_victoires);
     }
 
+
+
     public int getId() {
         return id;
     }
@@ -36,4 +38,6 @@ public class Joueur {
     public void setNb_victoires(int nb_victoires) {
         this.nb_victoires = nb_victoires;
     }
+
+
 }

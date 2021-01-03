@@ -2,14 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46ca5c50-d994-43cb-b9f7-13433604c357" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/controller/ControlleurJeuIA.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Alumettes/controller/ConstructeurJeu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alumettes/controller/ConstructeurJeu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Alumettes/controller/ControleurJeu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alumettes/controller/ControleurJeu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Alumettes/modele/Coup.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alumettes/modele/Coup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Alumettes/modele/Joueur.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alumettes/modele/Joueur.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Alumettes/modele/Tas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alumettes/modele/Tas.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Alumettes/vue/Ihm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alumettes/vue/Ihm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/ConstructeurJeu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ConstructeurJeu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/ControleurJeu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ControleurJeu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modele/Coup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modele/Coup.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modele/Joueur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modele/Joueur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modele/Tas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modele/Tas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nim/JeuNim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nim/JeuNim.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/vue/Ihm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vue/Ihm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +94,11 @@
       <workItem from="1607780153134" duration="349000" />
       <workItem from="1607796824681" duration="8878000" />
       <workItem from="1607893388430" duration="4289000" />
-      <workItem from="1607976583078" duration="5742000" />
+      <workItem from="1607976583078" duration="6121000" />
+      <workItem from="1608055436932" duration="6104000" />
+      <workItem from="1609621038438" duration="814000" />
+      <workItem from="1609673848839" duration="1238000" />
+      <workItem from="1609678999468" duration="3485000" />
     </task>
     <servers />
   </component>
@@ -106,68 +115,107 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="453" y="123" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1607978358255" />
-    <state x="352" y="90" key="#com.intellij.refactoring.encapsulateFields.EncalpsulateFieldsDialog" timestamp="1607982761686">
+    <state x="352" y="90" key="#com.intellij.refactoring.encapsulateFields.EncalpsulateFieldsDialog" timestamp="1609675644747">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="352" y="90" key="#com.intellij.refactoring.encapsulateFields.EncalpsulateFieldsDialog/0.0.1280.800@0.0.1280.800" timestamp="1607982761686" />
-    <state width="1238" height="263" key="GridCell.Tab.0.bottom" timestamp="1607982224513">
+    <state x="352" y="90" key="#com.intellij.refactoring.encapsulateFields.EncalpsulateFieldsDialog/0.0.1280.800@0.0.1280.800" timestamp="1609675644747" />
+    <state width="1238" height="263" key="GridCell.Tab.0.bottom" timestamp="1609683172109">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="263" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1607982224513" />
-    <state width="1238" height="263" key="GridCell.Tab.0.center" timestamp="1607982224512">
+    <state width="1238" height="263" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1609683172109" />
+    <state width="1238" height="263" key="GridCell.Tab.0.center" timestamp="1609683172108">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="263" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1607982224512" />
-    <state width="1238" height="263" key="GridCell.Tab.0.left" timestamp="1607982224511">
+    <state width="1238" height="263" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1609683172108" />
+    <state width="1238" height="263" key="GridCell.Tab.0.left" timestamp="1609683172105">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="263" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1607982224511" />
-    <state width="1238" height="263" key="GridCell.Tab.0.right" timestamp="1607982224513">
+    <state width="1238" height="263" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1609683172105" />
+    <state width="1238" height="263" key="GridCell.Tab.0.right" timestamp="1609683172109">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="263" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1607982224513" />
-    <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1607982224515">
+    <state width="1238" height="263" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1609683172109" />
+    <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1609683172112">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="263" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1607982224515" />
-    <state width="1238" height="263" key="GridCell.Tab.1.center" timestamp="1607982224514">
+    <state width="1238" height="263" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1609683172112" />
+    <state width="1238" height="263" key="GridCell.Tab.1.center" timestamp="1609683172111">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="263" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1607982224514" />
-    <state width="1238" height="263" key="GridCell.Tab.1.left" timestamp="1607982224514">
+    <state width="1238" height="263" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1609683172111" />
+    <state width="1238" height="263" key="GridCell.Tab.1.left" timestamp="1609683172110">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="263" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1607982224514" />
-    <state width="1238" height="263" key="GridCell.Tab.1.right" timestamp="1607982224515">
+    <state width="1238" height="263" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1609683172110" />
+    <state width="1238" height="263" key="GridCell.Tab.1.right" timestamp="1609683172111">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="263" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1607982224515" />
+    <state width="1238" height="263" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1609683172111" />
     <state x="128" y="0" key="SettingsEditor" timestamp="1607894075235">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="128" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1607894075235" />
-    <state x="317" y="232" key="com.intellij.ide.util.TipDialog" timestamp="1607976587481">
+    <state width="500" height="445" key="SwitcherDM" timestamp="1608057338446">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="317" y="232" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1607976587481" />
+    <state width="500" height="445" key="SwitcherDM/0.0.1280.800@0.0.1280.800" timestamp="1608057338446" />
+    <state x="317" y="234" key="com.intellij.ide.util.TipDialog" timestamp="1609679001445">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="317" y="234" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1609679001445" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/modele/Tas.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/src/controller/ControlleurJeuIA.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/controller/ControleurJeu.java</url>
-          <line>45</line>
+          <url>file://$PROJECT_DIR$/src/controller/ControlleurJeuIA.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/controller/ControlleurJeuIA.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/controller/ControlleurJeuIA.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/controller/ControlleurJeuIA.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/controller/ControlleurJeuIA.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/controller/ConstructeurJeu.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/controller/ConstructeurJeu.java</url>
+          <line>30</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/controller/ControleurJeu.java</url>
-          <line>46</line>
+          <url>file://$PROJECT_DIR$/src/vue/Ihm.java</url>
+          <line>155</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/nim/JeuNim.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

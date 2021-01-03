@@ -5,19 +5,12 @@ import modele.Joueur;
 import modele.Tas;
 import vue.Ihm;
 
-public class ControleurJeu {
+public class ControlleurJeuIA extends ControleurJeu{
 
-    private Tas tas;
-    private Ihm ihm;
-    // nous devrons avoir l'instance de ConstructeurJeu
-    private ConstructeurJeu constructeurJeu;
-
-
-    public ControleurJeu(Ihm ihm,Tas tas, ConstructeurJeu constructeurJeu) {
-        this.setTas(tas);
-        this.setIhm(ihm);
-        this.setConstructeurJeu(constructeurJeu);
+    public ControlleurJeuIA(Ihm ihm, Tas tas, ConstructeurJeu constructeurJeu) {
+        super(ihm, tas, constructeurJeu);
     }
+
 
 
     public void commencerJeu()  {
@@ -29,19 +22,34 @@ public class ControleurJeu {
         while (continuer){
 
             this.getIhm().displayTas(this.getTas());
-
             boolean coupValide= false;
-
             Coup coup=null;
-            while (!coupValide){
-                coup = this.getIhm().recupererCoup(currentPlayerObjet);
-                coupValide = this.getTas().verifierCoup(coup);
-                if (!coupValide){
-                    this.getIhm().coupInvalide();
+
+            if (joueurCourant==1){  // tour de l'ordinateur de jouer
+                while (!coupValide){
+                    boolean sitGagnante = this.getTas().situaitonGagnante()!=0;
+                    if (sitGagnante){
+                        coup= this.getTas().meulleurCoupIA(getConstructeurJeu().getNbMaxCoups());
+                    }else {
+                        coup= this.getTas().joueruCoupQuelconque();
+                    }
+                    coupValide = this.getTas().verifierCoup(coup);
+
+                }
+            }
+            else{  // tour du joueur  de jouer
+                while (!coupValide){
+                    coup = this.getIhm().recupererCoup(currentPlayerObjet);
+                    coupValide = this.getTas().verifierCoup(coup);
+                    if (!coupValide){
+                        this.getIhm().coupInvalide();
+                    }
                 }
             }
 
+
             this.getTas().jouerCoup(coup);
+            if (joueurCourant==1) this.getIhm().afficherCoupIA(coup);
             victoire = this.getTas().verifierVictoire();
 
 
@@ -77,27 +85,5 @@ public class ControleurJeu {
 
     }
 
-    public Tas getTas() {
-        return tas;
-    }
 
-    public void setTas(Tas tas) {
-        this.tas = tas;
-    }
-
-    public Ihm getIhm() {
-        return ihm;
-    }
-
-    public void setIhm(Ihm ihm) {
-        this.ihm = ihm;
-    }
-
-    public ConstructeurJeu getConstructeurJeu() {
-        return constructeurJeu;
-    }
-
-    public void setConstructeurJeu(ConstructeurJeu constructeurJeu) {
-        this.constructeurJeu = constructeurJeu;
-    }
 }

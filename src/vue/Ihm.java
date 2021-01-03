@@ -15,7 +15,7 @@ public class Ihm {
         }
     }
 
-    // cette methode affiche un seule tas
+    // cette methode affiche un seule tas (un etage)
     public void displaySingleTas(int nbAlumettes){
         int i=0;
         while (i<nbAlumettes){
@@ -123,12 +123,10 @@ public class Ihm {
         System.out.print("Ecriver votre coup sous forme: tas,nombre_d'alumettes ");
         Scanner scan = new Scanner(System.in);
         result = scan.nextLine();
-
         int numTas=0;
         int nbAllume=0;
         String tab[];
         tab = result.split(",");
-
         try{
              numTas  = Integer.parseInt(tab[0]);
              nbAllume  = Integer.parseInt(tab[1]);
@@ -145,4 +143,20 @@ public class Ihm {
         System.out.println("Erreur : Le coup n'est pas valide, veulliez réessayer:  ");
     }
 
+
+
+    // cette methode demande si on veut continuer ou quitter le jeu
+    public boolean jouerContreIA(){
+        String result="";
+        System.out.print("Voulez vous jouer contre l'IA ? ecrivez oui/non : ");
+        Scanner scan = new Scanner(System.in);
+        result = scan.nextLine();
+        boolean contreIa = result.equals("oui");
+        return result.equals("oui");
+    }
+
+
+    public void afficherCoupIA(Coup coup){
+        System.out.print("IA joue : " + coup.getNum_tas() +" "+ coup.getNb_alumettes_retirer());
+    }
 }
